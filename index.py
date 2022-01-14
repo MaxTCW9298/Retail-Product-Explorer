@@ -13,7 +13,7 @@ ap.add_argument("-i", "--index", required = True,
 	help = "Path to where the computed index will be stored")
 args = vars(ap.parse_args())
 # initialize the color descriptor
-cd = ColorLayoutDescriptor((8, 12, 3))
+cd = ColorDescriptor((8, 12, 3))
 
 # open the output index file for writing
 output = open(args["index"], "w")
